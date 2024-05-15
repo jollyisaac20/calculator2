@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+  <body>
+    <div class="container">
+        <div class="calculator sm-8">
+            <form>
+                <div class="display">
+                    <input type="text" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()" >
+                    <input type="button" value="DE" onclick="deleteLastCharacter()">
+                    <input type="button" value="." onclick="addDigit('.')">
+                    <input type="button" value="/" onclick="addDigit('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="addDigit('7')">
+                    <input type="button" value="8" onclick="addDigit('8')">
+                    <input type="button" value="9" onclick="addDigit('9')">
+                    <input type="button" value="*" onclick="addDigit('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="addDigit('4')">
+                    <input type="button" value="5" onclick="addDigit('5')">
+                    <input type="button" value="6" onclick="addDigit('6')">
+                    <input type="button" value="-" onclick="addDigit('-')">
+                    <div>
+                    <input type="button" value="1" onclick="addDigit('1')">
+                    <input type="button" value="2" onclick="addDigit('2')">
+                    <input type="button" value="3" onclick="addDigit('3')">
+                    <input type="button" value="+" onclick="addDigit('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="addDigit('00')">
+                    <input type="button" value="0" onclick="addDigit('0')">
+                    <input type="button" value="=" onclick="calculate()" class="equals-to">
+                   
+                </div>
+                
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="JAVASCRIPT/jvascript.js"></script>
+  </body>
+</html>
